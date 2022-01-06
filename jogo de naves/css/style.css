@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Titulo;
+    src: url(../JogosHTML5/jogo1/fontes/ANODETONOONE.TTF);
+}
+h1{
+    font-family: Titulo;
+    font-size: 40px;
+    color: #603A03;
+}
+body{
+    background-image: url(../JogosHTML5/jogo1/imgs/fundo.jpg);
+
+}
+#container{
+    width: 950px;
+    height: auto;
+    position: relative;
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+#fundoGame{
+    width: 950px;
+    height: 630px;
+    background-image:url(../JogosHTML5/jogo1/imgs/fundo_game.jpg) ;
+    border-color:#FFF ;
+    border-style: solid;
+}
+
+#inicio{
+    width: 350px;
+    height: 200px;
+    background-color: #FFF;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+/************** personagens **************/
+
+#jogador{
+    width: 256px;
+    height: 66px;
+    position: absolute;
+    left: 8px;
+    top: 179px;
+    background-image: url(../JogosHTML5/jogo1/imgs/apache.png);
+}
+
+#inimigo1{
+    width: 256px;
+    height: 66px;
+    position: absolute;
+    left: 689px;
+    top: 253px;
+    background-image: url(../JogosHTML5/jogo1/imgs/inimigo1.png);
+
+}
+
+#inimigo2{
+    width: 165px;
+    height: 70px;
+    position: absolute;
+    left: 775px;
+    top: 447px;
+    background-image: url(../JogosHTML5/jogo1/imgs/inimigo2.png);
+}
+
+#amigo{
+   width: 44px;
+   height: 51px;
+   position: absolute;
+   left: 10px;
+   top: 464px;
+   background-image: url(../JogosHTML5/jogo1/imgs/amigo.png);
+}
+
+/*******************Animação*****************/
+.anima1{
+    background-image: url(../JogosHTML5/jogo1/imgs/apache.png);
+    animation: play .5s steps(2) infinite;
+    /*codigo para funcionamento em todos os browsers*/
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+
+}
+/*codigo para play no funcionamento em todos os browsers*/
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+
+@-webkit-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+@-o-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -512px; }
+}
+
+.anima2{
+    background-image: url(../JogosHTML5/jogo1/imgs/inimigo1.png);
+    animation: play .5s steps(2) infinite;
+
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
+
+}
+
+.anima3{
+    background-image: url(../JogosHTML5/jogo1/imgs/amigo.png);
+    animation: play2 .9s steps(12) infinite;
+    /*codigo para funcionamento em todos os browsers*/
+    -webkit-animation: play2 .9s steps(12) infinite;
+    -moz-animation: play2 .9s steps(12) infinite;
+    -ms-animation: play2 .9s steps(12) infinite;
+    -o-animation: play2 .9s steps(12) infinite;
+}
+
+/*codigo para play no funcionamento em todos os browsers*/
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -528px; }
+}
+
+
+/*disparo*/
+
+#disparo{
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../JogosHTML5/jogo1/imgs/disparo.png);
+}
+
+
+/*explosão*/
+#explosao1{
+    width: 15px;
+    height: 87px;
+    position: absolute;
+    background-image: url(../JogosHTML5/jogo1/imgs/explosao.png);
+}
+#explosao2{
+    width: 15px;
+    height: 87px;
+    position: absolute;
+    background-image: url(../JogosHTML5/jogo1/imgs/explosao.png);
+}
+#explosao3{
+    width: 15px;
+    height: 51px;
+    position: absolute;
+}
+
+/*morte do amigo */
+.anima4{
+    width: 44px;
+    height: 51px;
+    background-image: url(../JogosHTML5/jogo1/imgs/amigo_morte.png);
+    animation: play3 5.s steps(7) infinite;
+    -webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#placar{
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
+}
+
+h2{
+    font-size: Titulo;
+    font-size: 20px;
+    color: #FFF;
+}
+
+#energia{
+    width: 140px;
+    height: 38px;
+    position: absolute;
+    top: 7px;
+    left: 750px;
+    
+}
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    	margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
